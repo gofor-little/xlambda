@@ -7,4 +7,4 @@
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/strongishllama/xlambda)](https://pkg.go.dev/github.com/strongishllama/xlambda)
 
 ## Introduction
-A small collection of functions to help write Lambdas in Go.
+A small collection of functions, objects and interfaces to help write Lambdas in Go.
