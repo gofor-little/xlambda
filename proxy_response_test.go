@@ -18,7 +18,7 @@ func TestNewProxyResponse(t *testing.T) {
 		Headers: map[string]string{
 			"Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent",
 			"Access-Control-Allow-Methods": "OPTIONS,GET,PUT,POST,DELETE,PATCH,HEAD",
-			"Access-Control-Allow-Origin":  "",
+			"Access-Control-Allow-Origin":  "*",
 			"Content-Type":                 "application/json",
 		},
 	}, response)
