@@ -5,7 +5,6 @@ import (
 	"fmt"
 
 	"github.com/aws/aws-lambda-go/events"
-	"github.com/gofor-little/env"
 	"github.com/gofor-little/log"
 	"github.com/gofor-little/xerror"
 )
@@ -17,13 +16,8 @@ import (
 // be written to the response body.
 func NewProxyResponse(statusCode int, contentType ContentType, err error, v interface{}) (*events.APIGatewayProxyResponse, error) {
 	if AccessControlAllowOrigin == "" {
-		log.Error(log.Fields{
-			"error": "access control allow origin not set on a package level, this will likely break CORS",
-		})
-	}
-
-	if env.Get("STAGE", "prod") != "prod" {
 		AccessControlAllowOrigin = "*"
+		log.Info(log.Fields{"message": "access control allow origin not set on a package level, defaulting to '*'"})
 	}
 
 	response := &events.APIGatewayProxyResponse{
