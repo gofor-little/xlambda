@@ -5,8 +5,8 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/gofor-little/xerror"
+	"github.com/gofor-little/xlambda"
 	"github.com/stretchr/testify/require"
-	"github.com/strongishllama/xlambda"
 )
 
 func TestUnmarshalAndValidate(t *testing.T) {

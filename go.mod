@@ -1,4 +1,4 @@
-module github.com/strongishllama/xlambda
+module github.com/gofor-little/xlambda
 
 go 1.16
 

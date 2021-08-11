@@ -7,7 +7,7 @@ import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/stretchr/testify/require"
 
-	"github.com/strongishllama/xlambda"
+	"github.com/gofor-little/xlambda"
 )
 
 func TestNewProxyRequest(t *testing.T) {
