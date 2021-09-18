@@ -1,0 +1,6 @@
+linters-settings:
+  errcheck:
+    exclude-functions:
+      - log.Debug(log.Fields)
+      - log.Error(log.Fields)
+      - log.Info(log.Fields)
