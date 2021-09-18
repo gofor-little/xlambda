@@ -13,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: golangci/golangci-lint-action@v2
+        with:
+          args: --config=.github/golangci.yml
 
   security-check:
     name: Security Check
@@ -21,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: securego/gosec@master
         with:
-          args: ./...
+          args: -conf .github/gosec.json ./...
 
   test:
     name: Test
