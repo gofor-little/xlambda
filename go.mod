@@ -5,14 +5,14 @@ go 1.17
 require (
 	github.com/aws/aws-lambda-go v1.27.0
 	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.2.1
-	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.5.1
+	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.5.2
 	github.com/gofor-little/log v1.0.3
 	github.com/gofor-little/xerror v0.5.1
 	github.com/stretchr/testify v1.7.0
 )
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.9.1 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.9.2 // indirect
 	github.com/aws/aws-sdk-go-v2/config v1.8.1 // indirect
 	github.com/aws/aws-sdk-go-v2/credentials v1.4.1 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.5.0 // indirect
