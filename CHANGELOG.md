@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.5.0 - 2021-10-21
+### Added
+* Added ```ProxyResponseHTML``` and ```ProxyResponseJSON``` functions.
+
+### Changed
+* **BREAKING**: Replaced ```AccessControlAllowOrigin``` with an ```Initialize``` function.
+* **BREAKING**: Split ```NewProxyResponse``` function into two separate functions. See Added.
+
+### Removed
+* **BREAKING**: Removed ```ContentType``` types.
+
 ## v0.4.3 - 2021-08-21
 ### Added
 * Added Go 1.17 support.
