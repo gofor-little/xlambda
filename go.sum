@@ -43,8 +43,6 @@ github.com/gofor-little/log v1.0.3 h1:G1s3r+ECYnjRMTHNC/JKHR4nwPLyCo2cXWZdwZDsON
 github.com/gofor-little/log v1.0.3/go.mod h1:iKuLiHde6jRfS+VMhODCnUCechRarfFh8cs3pcxy93I=
 github.com/gofor-little/ts v0.2.7 h1:n01haegMVhnxvPL/yGZ+qx6LGUmzi1LqwlnvPAxyTKQ=
 github.com/gofor-little/ts v0.2.7/go.mod h1:Wyhr4tcC1dySONAKE3xvtwPma2R7DGhC67rLe0VG8B8=
-github.com/gofor-little/xerror v0.5.1 h1:DXYXByhA2ffvYCPrTGp3ffirbTYd3ITxZdhgY7bY3Wg=
-github.com/gofor-little/xerror v0.5.1/go.mod h1:STbmj77c00keIwdRTBGGoixSyfVqz/pukORfbElaWck=
 github.com/google/go-cmp v0.5.4/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/google/go-cmp v0.5.6 h1:BKbKCqvP6I+rmFHt06ZmyQtvB8xAkWdhFyr0ZUNZcxQ=
 github.com/google/go-cmp v0.5.6/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=

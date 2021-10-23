@@ -10,7 +10,7 @@ import (
 
 // NewProxyRequest is a helper method to build a events.APIGatewayProxyRequest object.
 // You can use this method in tests to mock incoming request payloads to a Lambda function.
-func NewProxyRequest(method string, queryParameters map[string]string, body interface{}) (*events.APIGatewayProxyRequest, error) {
+func ProxyRequest(method string, queryParameters map[string]string, body interface{}) (*events.APIGatewayProxyRequest, error) {
 	request := &events.APIGatewayProxyRequest{
 		HTTPMethod:            method,
 		QueryStringParameters: queryParameters,

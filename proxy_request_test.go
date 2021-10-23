@@ -11,8 +11,8 @@ import (
 	"github.com/gofor-little/xlambda"
 )
 
-func TestNewProxyRequest(t *testing.T) {
-	request, err := xlambda.NewProxyRequest(http.MethodGet, map[string]string{
+func TestProxyRequest(t *testing.T) {
+	request, err := xlambda.ProxyRequest(http.MethodGet, map[string]string{
 		"test-key": "test-value",
 	}, struct {
 		Key string `json:"key"`

@@ -1,10 +1,11 @@
 package xlambda
 
 import (
+	"fmt"
+
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue"
 	"github.com/aws/aws-sdk-go-v2/service/dynamodb/types"
-	"github.com/gofor-little/xerror"
 )
 
 // UnmarshalDynamoDBEventAttributeValues unmarshals attributeValues into v. For v to work with attributevalue.UnmarshalMap
@@ -25,7 +26,7 @@ func UnmarshalDynamoDBEventAttributeValues(attributeValues map[string]events.Dyn
 	for k, v := range attributeValues {
 		attributes[k], err = fromDynamoDBAttributeValue(v)
 		if err != nil {
-			return xerror.Wrap("failed to parse events.DynamoDBAttributeValue of type map into types.AttributeValue", err)
+			return fmt.Errorf("failed to parse events.DynamoDBAttributeValue of type map into types.AttributeValue: %w", err)
 		}
 	}
 
@@ -44,14 +45,14 @@ func fromDynamoDBAttributeValue(eventValue events.DynamoDBAttributeValue) (types
 	case events.DataTypeList:
 		values, err := fromDynamoDBAttributeValueList(eventValue.List())
 		if err != nil {
-			return nil, xerror.Wrap("failed to parse events.DynamoDBAttributeValue of type list into types.AttributeValue", err)
+			return nil, fmt.Errorf("failed to parse events.DynamoDBAttributeValue of type list into types.AttributeValue: %w", err)
 		}
 
 		return &types.AttributeValueMemberL{Value: values}, nil
 	case events.DataTypeMap:
 		values, err := fromDynamoDBAttributeValueMap(eventValue.Map())
 		if err != nil {
-			return nil, xerror.Wrap("failed to parse events.DynamoDBAttributeValue of type map into types.AttributeValue", err)
+			return nil, fmt.Errorf("failed to parse events.DynamoDBAttributeValue of type map into types.AttributeValue: %w", err)
 		}
 
 		return &types.AttributeValueMemberM{Value: values}, nil
@@ -69,7 +70,7 @@ func fromDynamoDBAttributeValue(eventValue events.DynamoDBAttributeValue) (types
 		// Fallthrough.
 	}
 
-	return nil, xerror.Newf("failed to parse data type: %v", eventValue.DataType())
+	return nil, fmt.Errorf("failed to parse data type: %v", eventValue.DataType())
 }
 
 // fromDynamoDBAttributeValueList will convert a []events.DynamoDBAttributeValue into a []types.AttributeValue.
@@ -80,7 +81,7 @@ func fromDynamoDBAttributeValueList(eventValues []events.DynamoDBAttributeValue)
 	for i := 0; i < len(eventValues); i++ {
 		typeValues[i], err = fromDynamoDBAttributeValue(eventValues[i])
 		if err != nil {
-			return nil, xerror.Wrap("failed to parse types.AttributeValue into events.DynamoDBAttributeValue", err)
+			return nil, fmt.Errorf("failed to parse types.AttributeValue into events.DynamoDBAttributeValue: %w", err)
 		}
 	}
 
@@ -95,7 +96,7 @@ func fromDynamoDBAttributeValueMap(eventValues map[string]events.DynamoDBAttribu
 	for k, v := range eventValues {
 		typeValues[k], err = fromDynamoDBAttributeValue(v)
 		if err != nil {
-			return nil, xerror.Wrap("failed to parse types.AttributeValue into events.DynamoDBAttributeValue", err)
+			return nil, fmt.Errorf("failed to parse types.AttributeValue into events.DynamoDBAttributeValue: %w", err)
 		}
 	}
 
