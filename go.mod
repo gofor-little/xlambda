@@ -8,6 +8,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.5.2
 	github.com/gofor-little/log v1.0.3
 	github.com/gofor-little/xerror v0.5.1
+	github.com/mitchellh/mapstructure v1.4.2
 	github.com/stretchr/testify v1.7.0
 )
 
