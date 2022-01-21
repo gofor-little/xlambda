@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/aws/aws-lambda-go v1.28.0
-	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.5.0
+	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.6.0
 	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.13.0
 	github.com/gofor-little/log v1.0.4
 	github.com/mitchellh/mapstructure v1.4.3
@@ -18,7 +18,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.7.0 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.2.5 // indirect
 	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.8.0 // indirect
-	github.com/aws/aws-sdk-go-v2/service/dynamodbstreams v1.10.0 // indirect
+	github.com/aws/aws-sdk-go-v2/service/dynamodbstreams v1.11.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.4.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sso v1.5.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.8.0 // indirect
