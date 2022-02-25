@@ -5,14 +5,14 @@ go 1.17
 require (
 	github.com/aws/aws-lambda-go v1.28.0
 	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.6.0
-	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.13.0
+	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.14.0
 	github.com/gofor-little/log v1.0.4
 	github.com/mitchellh/mapstructure v1.4.3
 	github.com/stretchr/testify v1.7.0
 )
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.13.0 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.14.0 // indirect
 	github.com/aws/aws-sdk-go-v2/config v1.9.0 // indirect
 	github.com/aws/aws-sdk-go-v2/credentials v1.5.0 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.7.0 // indirect
@@ -22,7 +22,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.4.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sso v1.5.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.8.0 // indirect
-	github.com/aws/smithy-go v1.10.0 // indirect
+	github.com/aws/smithy-go v1.11.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/gofor-little/ts v0.2.7 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
