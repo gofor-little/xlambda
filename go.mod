@@ -3,7 +3,7 @@ module github.com/gofor-little/xlambda
 go 1.17
 
 require (
-	github.com/aws/aws-lambda-go v1.28.0
+	github.com/aws/aws-lambda-go v1.29.0
 	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.8.2
 	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.15.2
 	github.com/gofor-little/log v1.0.4
