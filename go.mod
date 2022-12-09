@@ -3,12 +3,12 @@ module github.com/gofor-little/xlambda
 go 1.17
 
 require (
-	github.com/aws/aws-lambda-go v1.32.0
+	github.com/aws/aws-lambda-go v1.36.0
 	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.9.2
 	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.15.5
 	github.com/gofor-little/log v1.0.4
 	github.com/mitchellh/mapstructure v1.5.0
-	github.com/stretchr/testify v1.7.1
+	github.com/stretchr/testify v1.7.2
 )
 
 require (
@@ -26,5 +26,5 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/gofor-little/ts v0.2.7 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
