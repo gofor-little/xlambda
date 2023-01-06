@@ -1,9 +1,7 @@
 name: Security Scan
-
 on:
   schedule:
     - cron: 0 0 * * *
-
 jobs:
   security-check:
     name: Security Check
