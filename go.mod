@@ -5,10 +5,10 @@ go 1.17
 require (
 	github.com/aws/aws-lambda-go v1.32.1
 	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.9.19
-	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.17.1
-	github.com/gofor-little/log v1.0.16
+	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.17.9
+	github.com/gofor-little/log v1.0.17
 	github.com/mitchellh/mapstructure v1.5.0
-	github.com/stretchr/testify v1.7.5
+	github.com/stretchr/testify v1.8.1
 )
 
 require (
@@ -27,7 +27,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.0 // indirect
 	github.com/aws/smithy-go v1.13.5 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/gofor-little/ts v0.2.7 // indirect
+	github.com/gofor-little/ts v0.2.11 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
