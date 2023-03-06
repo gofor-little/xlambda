@@ -4,8 +4,8 @@ go 1.17
 
 require (
 	github.com/aws/aws-lambda-go v1.37.0
-	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.10.15
-	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.18.5
+	github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue v1.10.16
+	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.18.6
 	github.com/gofor-little/log v1.0.20
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/stretchr/testify v1.8.2
